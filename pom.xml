@@ -16,6 +16,10 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		
+		<!-- Timestamp of build  -->
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
 	</properties>
 
 	<dependencies>
@@ -75,6 +79,8 @@
 	</dependencies>
 
 	<build>
+		<finalName>${project.artifactId}_${project.version}_${timestamp}</finalName>
+		
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
