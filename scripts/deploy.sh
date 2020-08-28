@@ -12,7 +12,7 @@ cd $APP_HOME
 
 echo "> Build 파일 복사"
 
-cp APP_DEPLOY_DIR/*.jar $APP_LIB_DIR/
+cp $APP_DEPLOY_DIR/*.jar $APP_LIB_DIR/
 
 echo "> 현재 구동중인 애플리케이션 pid 확인"
 
